@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="258.0" prefWidth="435.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ppt.MainController">
+   <children>
+      <ImageView fx:id="piedra" fitHeight="109.0" fitWidth="98.0" layoutX="44.0" layoutY="96.0" onMouseClicked="#piedra" preserveRatio="true">
+         <image>
+            <Image url="@piedra.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="papel" fitHeight="100.0" fitWidth="100.0" layoutX="180.0" layoutY="79.0" onMouseClicked="#papel" preserveRatio="true">
+         <image>
+            <Image url="@papel.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tijera" fitHeight="100.0" fitWidth="100.0" layoutX="313.0" layoutY="79.0" onMouseClicked="#tijera" preserveRatio="true">
+         <image>
+            <Image url="@tijera.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="114.0" layoutY="14.0" pickOnBounds="false" text="Piedra, papel o tijera!">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="esperar" layoutX="115.0" layoutY="202.0" text="Esperando al otro jugador..." visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="tapar" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="127.0" layoutX="32.0" layoutY="69.0" stroke="TRANSPARENT" strokeType="INSIDE" visible="false" width="383.0" />
+      <Label fx:id="ganador" layoutX="123.0" layoutY="96.0" text="Has ganado!" visible="false">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="perdedor" layoutX="122.0" layoutY="107.0" text="Has perdido!" visible="false">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="empate" layoutX="155.0" layoutY="96.0" text="Empate!" visible="false">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
